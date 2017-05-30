@@ -31,6 +31,7 @@ ic = document.getElementById('imageContainer');
 //URL we received from the camera application.
 ic.innerHTML = '<img src="' + imageURL +
 '" width="50%" />';
+navigator.notification.alert("la URL es esta: " +imageURL);
 }
 function onCameraError(e) {
 console.log(e);
